@@ -1,0 +1,60 @@
+.parent {
+	display: flex;
+	align-items: center;
+	flex-flow: column;
+	justify-content: center;
+}
+
+.child {
+	width: 30%;
+	border: 1px solid #ddd;
+	color: #588ae1;
+	padding: 1%;
+	margin: 1%;
+	box-shadow: 5px 5px 5px 5px #588ae1;
+	text-align: center;
+	height: 35%;
+}
+.child2{
+	text-align: center;
+	width: 70%;
+	padding: 1%;
+	border: 1px solid #ddd;
+	box-shadow: 8px 8px 8px 8px #000;
+	margin: 1%;
+}
+
+.email {
+	text-decoration: none;
+	font-size: 20px;
+	display: block;
+}
+
+.mobile {
+	text-decoration: none;
+	font-size: 20px;
+	display: block;
+}
+
+.btn {
+background: #588ae1;
+width: 40%;
+margin-left: 30%;
+margin-right: 30%;
+color:#fff;
+display: block;
+text-decoration: none;
+font-size: 20px;
+}
+
+h1{
+	color: #588ae1;
+	font-size: 50px;
+	text-shadow: 5px 5px 3px orange;
+	text-align: center;
+}
+.heading1{
+	font-size: 30px;
+	text-shadow: 3px 3px 3px #4AFD0C;
+	color: #F94309;
+}

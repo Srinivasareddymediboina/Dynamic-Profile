@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>	</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<section id="root" class="parent"> 
+
+	</section>
+</body>
+
+<script>
+var param=window.location.search.substring(1).split("=");
+var value=param[1];
+fetch('data/data.json').then(res=>{
+		return res.json();
+}).then(data=>{
+//console.log(data.profiles[value]);
+	heading(data.profiles[value]);
+	profileInfo(data.profiles[value]);
+	profileDescription(data.profiles[value]);
+	Certifications(data.profiles[value]);
+		//var strObj=JSON.stringify(data);
+		//strObj.profiles.push(profileInfo{name:name});
+		//console.log(strObj);
+})
+var parent=document.querySelector('#root');
+var child1= document.createElement("article");
+child1.classList.add("child");
+var child2=document.createElement("article");
+child2.classList.add("child2")
+
+parent.append(child1);
+parent.append(child2);
+
+function heading(i){
+	var name1=document.createElement("h1");
+	name1.textContent=i.profileInfo.name+"Profile";
+
+
+}
+//var name1=document.createElement("h1");
+//name1.textContent=i.profileInfo.name+"Profile";
+
+function profileInfo(i){
+
+		//Name
+		var name=document.createElement("h2");
+		name.textContent=i.profileInfo.name;
+		name.style.color="#588ae1";
+		name.style.textShadow="3px 3px 3px orange";
+		child1.append(name);
+
+		// Email
+		var email=document.createElement("a");
+		email.textContent=i.profileInfo.email;
+		email.href="mailto:"+i.profileInfo.email ;
+		email.classList.add("email");
+		child1.append(email);
+
+		// Mobile
+		var mobile=document.createElement("a");
+		mobile.textContent=i.profileInfo.mobile;
+		mobile.href="tel:"+i.profileInfo.mobile;
+		mobile.classList.add("mobile");
+		child1.append(mobile);
+}
+function profileDescription(i){
+		var heading1=document.createElement("h2");
+		var hr=document.createElement("hr");
+		heading1.textContent="Educational Qualifications";
+		heading1.style.color="#F93015";
+		heading1.style.textShadow="3px 3px 3px #4AFD0C";
+
+		child2.append(heading1);
+		child2.append(hr);
+
+		i.education.map(j=>{
+				var degree=document.createElement("h3");
+				degree.style.color="#0D99AC";
+				degree.textContent=j.degree;
+				child2.append(degree);
+
+				var inst=document.createElement("em");
+				inst.textContent=j.institute;
+				child2.append(inst);
+
+
+
+		})
+}
+function Certifications(i){
+		var heading1=document.createElement("h2");
+		var hr=document.createElement("hr");
+		heading1.textContent="Global Certifications"
+		heading1.style.color="#F93015";
+		heading1.style.textShadow="3px 3px 3px #4AFD0C";
+
+		child2.append(heading1);
+		child2.append(hr);
+
+		i.certifications.map(j=>{
+				var course=document.createElement("h3");
+				course.style.color="#22800D";
+				course.textContent=j.python;
+				child2.append(course);
+
+				var uni=document.createElement("em");
+				uni.textContent=j.univercity;
+				child2.append(uni);
+
+
+
+		})
+}
+
+
+</script>
+</html>

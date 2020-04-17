@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dynamic Profile</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link rel="stylesheet" href="css/style.css"/>
+	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+</head>
+<body>
+	<h1>Dynamic Profiles</h1>
+	<div class="row">
+		<div class="col-sm-8">
+			<div class="alert alert-warning"><strong>Hey Please fill the all details..!</strong>
+			</div>
+			
+		</div>
+		
+	</div>
+
+	<div class="row" style="justify-content: center;">
+		<div class="Card" style="border: 1px solid #000;" >
+			<div class="card-header bg-primary text-white">
+				Registration Form
+			</div>
+			<div class="card-body">
+				<form>
+					<input type="text" class="form-control" placeholder="Name" required/><br>
+					<input type="email" class="form-control" placeholder="Email" required/><br>
+					<input type="file" class="form-control" required/><br>
+
+					<select class="form-control">
+						<option value="" selected disabled>Select Your City</option>
+						<option value="Guntur">Guntur</option>
+						<option value="Prakasam">Prakasam</option>
+						<option value="Krishna">Krishna</option>
+					</select>
+				
+					<input type="submit" class="btn bg-primary" value="Register">
+					
+				</form>
+				
+			</div>
+		</div>
+		
+		
+	</div>
+	<div class="col-sm-6 col-lg-6 col-sm-8" >
+		<div class="table-responsive" width="400px">
+		<table class="table table-bordered table-hover" >
+			<thead class="bg-primary text-white">
+				<tr>
+					<th>Name</th>
+					<th>Best Friend</th>
+					<th>Best Friend</th>
+					<th>Best Friend</th
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="bg-warning text-white">
+					<td>Srinivasa Reddy</td>
+					<td>Viswanth Reddy</td>
+					<td>Viswanth Reddy</td>
+					<td>Viswanth Reddy</td>
+				</tr>
+				<tr class="bg-info text-white">
+					<td>Balachandra Reddy</td>
+					<td>V Viswanth Reddy</td>
+					<td>Viswanth Reddy</td>
+					<td>Viswanth Reddy</td>
+				</tr>
+				<tr class="bg-success text-white">
+					<td>Srinu</td>
+					<td>Vis Reddy</td>
+					<td>Viswanth Reddy</td>
+					<td>Viswanth Reddy</td>
+				</tr>
+			</tbody>			
+		</table>
+		</div>
+		
+	</div>
+
+	<section id="root" class="parent"> 
+
+	</section>
+	<script src="js/main.js"> </script>
+</body>
+</html>
+<script>
+	if ('serviceWorker' in navigator){
+		navigator.serviceWorker.register('./serviceWorker.js',{scope:'./'}).then(alert=>{
+			console.log('Registration of serviceWorker is successful')
+		}).catch(error=>{
+			console.log("Registration Failed"+error)
+		})
+	}
+</script>

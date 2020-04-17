@@ -1,0 +1,133 @@
+{
+	"profiles":[
+		{
+			"profileInfo":{
+				"name":"M Viswanth Reddy",
+				"email":"viswanth1914@gmail.com",
+				"mobile":"8466865901",
+				"address":"Bapatla, Guntur"
+			},
+			"certifications":[
+				{
+					"python":"Python for Everybody",
+					"univercity":"Michigan univercity"
+				},
+				{
+					"python":"FullStack Certification",
+					"univercity":"Udacity"
+				}
+			],
+			"education":[
+				{
+					"degree":"B-Tech (E C E)",
+					"institute":"St Ann's college of engineering"
+				},
+				{
+					"degree":"Diploma (E C E)",
+					"institute":"Bapatla Engineering college"
+				},
+				{
+					"degree":"SSC",
+					"institute":"Z P H School"
+				}
+			]
+		},
+		{
+			"profileInfo":{
+				"name":"M Srinivasa Reddy",
+				"email":"nivas0803@gmail.com",
+				"mobile":"9398811500",
+				"address":"Chirala, Prakasam"
+			},
+			"certifications":[
+				{
+					"python":"Python for Everybody",
+					"univercity":"Michigan univercity"
+				},
+				{
+					"python":"FullStack Certification",
+					"univercity":"Udacity"
+				}
+			],
+			"education":[
+				{
+					"degree":"B-Tech (E C E)",
+					"institute":"St Ann's college of engineering"
+				},
+				{
+					"degree":"Diploma (E C E)",
+					"institute":"Bapatla Engineering college"
+				},
+				{
+					"degree":"SSC",
+					"institute":"Z P H School"
+				}
+			]
+		},
+		{
+			"profileInfo":{
+				"name":"Lucky",
+				"email":"lucky@gmail.com",
+				"mobile":"9398811500",
+				"address":"Vetapalem, Prakasam"
+			},
+			"certifications":[
+				{
+					"python":"Python for Everybody",
+					"univercity":"Michigan univercity"
+				},
+				{
+					"python":"FullStack Certification",
+					"univercity":"Udacity"
+				}
+			],
+			"education":[
+				{
+					"degree":"B-Tech (E C E)",
+					"institute":"St Ann's college of engineering"
+				},
+				{
+					"degree":"Diploma (E C E)",
+					"institute":"Bapatla Engineering college"
+				},
+				{
+					"degree":"SSC",
+					"institute":"Z P H School"
+				}
+			]
+		},
+		{
+			"profileInfo":{
+				"name":"Pinky",
+				"email":"pinky@gmail.com",
+				"mobile":"9030229048",
+				"address":"Chirala, Prakasam"
+			},
+			"certifications":[
+				{
+					"python":"Python for Everybody",
+					"univercity":"Michigan univercity"
+				},
+				{
+					"python":"FullStack Certification",
+					"univercity":"Udacity"
+				}
+			],
+			"education":[
+				{
+					"degree":"B-Tech (E C E)",
+					"institute":"St Ann's college of engineering"
+				},
+				{
+					"degree":"Diploma (E C E)",
+					"institute":"Bapatla Engineering college"
+				},
+				{
+					"degree":"SSC",
+					"institute":"Z P H School"
+				}
+			]
+		}
+
+	]
+}
